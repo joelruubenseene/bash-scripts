@@ -2,7 +2,7 @@
 #!/bin/bash
 
 if [[ $# -ne 2 ]]; then
-  echo "This script generates a list of dates between two given dates"
+  echo "This script generates a list of dates between two given dates with day of the week"
   echo ""
   echo "Usage:   $0 <start_date_as_YYYYMMDD> <end_date_as_YYYYMMDD>"
   echo "Example: $0 20200101 20200131"
