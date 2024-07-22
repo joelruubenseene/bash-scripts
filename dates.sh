@@ -1,6 +1,17 @@
 #!/bin/bash
-STARTDATE=20241031 #LAST DATE OF PRECEDING MONTH
-ENDDATE=20241130 # LAST DATE OF THE TARGET MONTH
+#!/bin/bash
+
+if [[ $# -ne 2 ]]; then
+  echo "This script generates a list of dates between two given dates"
+  echo ""
+  echo "Usage:   $0 <start_date_as_YYYYMMDD> <end_date_as_YYYYMMDD>"
+  echo "Example: $0 20200101 20200131"
+  echo "NOTE: The start date should be the last day of preceding month"
+  exit 1
+fi
+
+STARTDATE=$1
+ENDDATE=$2
 
 d=
 n=0
